@@ -231,6 +231,12 @@ html { scroll-behavior: smooth; }
   transition: 0.6s;
 }
 .hero-text .btn:hover::before { left: 200%; }
+
+html, body { overflow-x: hidden; width: 100%; }
+.navbar ul { flex-direction: column; position: absolute; top: 60px; right: -100%; background: var(--secondary); width: 220px; padding: 20px; border-radius: 5px; transition: right 0.3s ease; }
+.navbar ul.active { right: 0; }
+.hamburger { display: flex; }
+
  
 </style>
 </head>
